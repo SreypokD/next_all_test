@@ -1,0 +1,2 @@
+flow running===================================
+run dev -> package.json ->rander on layout -> page.tsx ->browser
