@@ -1,3 +1,4 @@
+import Container from "./components/Container";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/NavBar";
 import "./globals.css";
@@ -23,7 +24,9 @@ export default function RootLayout({
       <body className={poppins.className}>
         <div className="flex flex-col min-h-screen">
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <Container>
+            {children}
+          </Container>
           <Footer />
         </div>
       </body>
